@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes/Beacons</title>
+    <!-- <link rel="stylesheet" href="styles/dataTables.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script> -->
+</head>
+<body>
+
+    <header>
+        <button class="home-button" onclick="location.href='index.html'">🏠 Home</button>
+        <button class="codes-button" onclick="location.href='codes.html'">Manage Beacons</button>
+        <button class="users-button" onclick="location.href='users.html'">Manage Users</button>
+        <button class="courses-button" onclick="location.href='specialities.html'">Manage Courses</button>
+        <h1>Codes</h1>
+    </header>
+
+    <button onclick="fetchCodes()">re-load Codes</button>
+    
+    <div id="code-container">
+    </div>
+
+    <script type="module" src="/codes.ts"></script>
+</body>
+</html>

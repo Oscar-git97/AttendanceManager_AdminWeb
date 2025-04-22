@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "datatables.net-dt": "^2.2.2"
+  },
+  "scripts": {
+    "watch": "npx tsc --watch",
+    "start": "npx concurrently \"npx tsc --watch\" \"npx http-server -p 8081\"",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/datatables.net": "^1.10.28",
+    "@types/jquery": "^3.5.32",
+    "concurrently": "^9.1.2",
+    "vite": "^6.2.2"
+  }
+}

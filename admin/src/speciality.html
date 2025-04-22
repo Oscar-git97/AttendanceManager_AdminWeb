@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speciality</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button class="home-button" onclick="location.href='index.html'">🏠 Home</button>
+        <h1 id="speciality-title">Loading...</h1> 
+    </header>
+
+
+    <h1>Modules</h1> 
+    <div id="module-container">
+    </div>
+
+    <h1>Students</h1> 
+    <div id="student-container">
+    </div>
+
+    <script type="module" src="/speciality.ts"></script> 
+    
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const speciality = {
+            id: params.get("id"),
+            specialityName: params.get("specialityName"),
+        };
+
+        if (speciality.specialityName) {
+            document.getElementById("speciality-title").textContent = speciality.specialityName;
+        } else {
+            document.getElementById("speciality-title").textContent = "Speciality Not Found";
+        }
+    </script>
+
+<script type="module">
+    import { viewSpeciality } from '/speciality.ts';
+    viewSpeciality(speciality.id);
+</script>
+
+
+</body>
+
+</html>

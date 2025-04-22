@@ -1,0 +1,9 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background-color: #50d2f9; /* AliceBlue, change to any color you like */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
