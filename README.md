@@ -4,9 +4,10 @@
 
 <img align="right" src="/resources/Techno_choice.jpg" alt="choice of technologies used" width="400"/>
 
-This ***Admin Dashboard*** is part of a full stack project. The servlet, mobile app and database can all be found in the following repositories:
+This ***Admin Dashboard*** is part of a full stack project. The server, mobile app and database can all be found in the following repositories:
 - [Spring Boot - server](https://github.com/Oscar-git97/AttendanceManager_Backend)
 - [Kotlin - mobile app]()
+- [MySql - database]()
 </br>
 
 The picture on the right gives an overview of the technologies used to create this application.
@@ -15,6 +16,9 @@ The picture on the right gives an overview of the technologies used to create th
 </br>
 
 **goal:**
+
+<img align="right" src="/resources/User_flow_App.jpg" alt="choice of technologies used" width="401"/>
+
 - a ***teacher*** will be able to create and manage ***sessions*** that will be linked to a specific ***cours*** that is part of a ***study program***
 - also each ***teacher*** will be assigned a ***bluetooth beacon***
 - as soon as the ***teacher*** opens the ***session***, student will be able to verify their attendance when:
